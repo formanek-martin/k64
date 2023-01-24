@@ -14,3 +14,4 @@ jobs:
         server: ftp.marfo.cz
         username: k64.marfo.cz
         password: ${{ secrets.FTP_PASSWORD }}
+        dry-run: true
