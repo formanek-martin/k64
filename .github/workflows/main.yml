@@ -15,4 +15,3 @@ jobs:
         username: k64.marfo.cz
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./k64-dir/
-        dry-run: true
