@@ -13,4 +13,4 @@ jobs:
       with:
         server: ftp.marfo.cz
         username: k64.marfo.cz
-        password: ${{ secrets.ftp_password }}
+        password: ${{ secrets.FTP_PASSWORD }}
