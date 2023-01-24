@@ -1,4 +1,7 @@
-on: push
+on: 
+  push:
+    branches:
+      - master
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -15,3 +18,4 @@ jobs:
         username: k64.marfo.cz
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./k64-dir/
+        fetch-depth : 100
