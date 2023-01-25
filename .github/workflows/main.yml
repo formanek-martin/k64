@@ -18,4 +18,5 @@ jobs:
         username: k64.marfo.cz
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./k64-dir/
-        fetch-depth : 100
+        protocol: ftps
+        port: 222
