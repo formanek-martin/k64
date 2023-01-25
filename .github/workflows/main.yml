@@ -24,8 +24,8 @@ jobs:
         server: 62.109.154.63
         username: multi_532773
         password: ${{ secrets.FTP_PWD_2 }}
-        local-dir: ./k64-dir/
-        server-dir: ./marfo.cz/
+        local-dir: ./k64-dir/vendor/
+        server-dir: ./marfo.cz/vendor/
         port: 21
         timeout: 300000
         passive: true
