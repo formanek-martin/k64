@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - master
-name: 🚀 Deploy website on push - vendor
+name: 🚀 Deploy website on push - all apart of core
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -18,6 +18,10 @@ jobs:
         server: 62.109.154.63
         username: multi_532773
         password: ${{ secrets.FTP_PWD_2 }}
-        local-dir: ./k64-dir/vendor/
-        server-dir: ./marfo.cz/vendor/
-        port: 21
+        local-dir: ./k64-dir/
+        server-dir: ./marfo.cz/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          web/core/**
