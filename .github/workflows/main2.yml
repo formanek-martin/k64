@@ -18,6 +18,11 @@ jobs:
         server: 62.109.154.63
         username: multi_532773
         password: ${{ secrets.FTP_PWD_2 }}
-        local-dir: ./k64-dir/web/
-        server-dir: ./marfo.cz/web/
-        port: 21
+        local-dir: ./k64-dir/
+        server-dir: ./marfo.cz/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          ./web/core/*
+          ./vendor/*
