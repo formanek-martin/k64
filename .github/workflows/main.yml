@@ -7,6 +7,7 @@ jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
+    timeout-minutes: 200
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
@@ -18,5 +19,4 @@ jobs:
         username: k64.marfo.cz
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./k64-dir/
-        protocol: ftps
-        port: 222
+        timeout: 300000
