@@ -15,9 +15,16 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        server: ftp.marfo.cz
-        username: k64.marfo.cz
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./k64-dir/vendor/asm89/
-        server-dir: ./tmp/
+#         server: ftp.marfo.cz
+#         username: k64.marfo.cz
+#         password: ${{ secrets.FTP_PASSWORD }}
+#         local-dir: ./k64-dir/vendor/asm89/
+#         server-dir: ./tmp/
+#         timeout: 300000
+        server: 62.109.154.63
+        username: multi_532773
+        password: ${{ secrets.FTP_PWD_2 }}
+        local-dir: ./k64-dir/
+        server-dir: ./marfo.cz/
+        post: 21
         timeout: 300000
