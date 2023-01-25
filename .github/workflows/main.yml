@@ -18,5 +18,6 @@ jobs:
         server: ftp.marfo.cz
         username: k64.marfo.cz
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./k64-dir/
+        local-dir: ./k64-dir/vendor/asm89
+        server-dir: ./tmp/
         timeout: 300000
