@@ -1,0 +1,22 @@
+on: 
+  push:
+    branches:
+      - master
+name: 🚀 Deploy - all apart of core part II
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: 62.109.154.63
+        username: multi_532773
+        password: ${{ secrets.FTP_PWD_2 }}
+        local-dir: ./k64-dir/vendor/
+        server-dir: ./marfo.cz/vendor/
