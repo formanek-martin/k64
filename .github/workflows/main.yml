@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - master
-name: 🚀 Deploy - all apart of core
+name: 🚀 Deploy - all apart of core part I
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -25,3 +25,4 @@ jobs:
           **/.git*/**
           **/node_modules/**
           web/core/**
+          vendore/**
