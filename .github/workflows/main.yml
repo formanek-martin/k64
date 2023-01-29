@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - master
-name: 🚀 Deploy - all apart of core part I
+name: 🚀 Deploy - Drupal rest
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -19,10 +19,11 @@ jobs:
         username: multi_532773
         password: ${{ secrets.FTP_PWD_2 }}
         local-dir: ./k64-dir/
-        server-dir: ./marfo.cz/
+        server-dir: ./marfo.cz/_sub/admin/
         exclude: |
           **/.git*
           **/.git*/**
           **/node_modules/**
           web/core/**
           vendor/**
+          react_app/**
