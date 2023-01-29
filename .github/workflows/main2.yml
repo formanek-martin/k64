@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - master
-name: 🚀 Deploy - all apart of core part II
+name: 🚀 Deploy - Drupal vendor
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -19,4 +19,4 @@ jobs:
         username: multi_532773
         password: ${{ secrets.FTP_PWD_2 }}
         local-dir: ./k64-dir/vendor/
-        server-dir: ./marfo.cz/vendor/
+        server-dir: ./marfo.cz/_sub/admin/vendor/
