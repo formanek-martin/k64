@@ -1,0 +1,12 @@
+name: Restrict node view page access
+description: 'Allow to control the node view page access for all the content types.'
+type: module
+core_version_requirement: ^8.8 || ^9 || ^10
+# version: '8.x-1.1'
+package: Content
+# project: restrict_node_view_page
+# datestamp: 1669181209
+# Information added by Drupal.org packaging script on 2022-11-23
+version: '8.x-1.1'
+project: 'restrict_node_view_page'
+datestamp: 1669209910
