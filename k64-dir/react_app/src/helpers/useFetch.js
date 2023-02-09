@@ -1,7 +1,9 @@
 import { useState } from "react";
+import envVariables from "./envVariables.js";
 
-export default function useFetch(baseUrl) {
+export default function useFetch() {
   const [loading, setLoading] = useState(true);
+  const baseUrl = envVariables();
 
   function get(url) {
     return new Promise((resolve, reject) => {
