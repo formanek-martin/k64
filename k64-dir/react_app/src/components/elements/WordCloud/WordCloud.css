@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+.word_cloud {
+    font-family: Rubik Mono One, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.word_cloud--item {
+    cursor: pointer;
+    color: rgb(147, 160, 146);
+    font-size: 2rem;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
