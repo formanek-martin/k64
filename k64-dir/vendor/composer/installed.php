@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '3b011e92ba83273f4655f6ec26be852fb413256d',
+        'reference' => '5ea86bb75131ac16b76558ded06ab38e40136206',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -244,6 +244,15 @@
                 0 => '10.0.2',
             ),
         ),
+        'drupal/ctools' => array(
+            'pretty_version' => '4.0.3',
+            'version' => '4.0.3.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/ctools',
+            'aliases' => array(),
+            'reference' => '4.0.3',
+            'dev_requirement' => false,
+        ),
         'drupal/decoupled_router' => array(
             'pretty_version' => '2.0.4',
             'version' => '2.0.4.0',
@@ -259,7 +268,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '3b011e92ba83273f4655f6ec26be852fb413256d',
+            'reference' => '5ea86bb75131ac16b76558ded06ab38e40136206',
             'dev_requirement' => false,
         ),
         'drupal/restrict_node_view_page' => array(

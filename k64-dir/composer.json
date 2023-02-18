@@ -20,6 +20,7 @@
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
+        "drupal/ctools": "^4.0",
         "drupal/decoupled_router": "^2.0",
         "drupal/restrict_node_view_page": "^1.1",
         "drupal/restui": "^1.21"
