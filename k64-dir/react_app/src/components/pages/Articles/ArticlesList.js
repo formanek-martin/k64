@@ -1,7 +1,7 @@
 import {useEffect} from "react";
-import useFetch from "../../helpers/useFetch.js"
+import useFetch from "../../../helpers/useFetch.js"
 
-export default function Articles() {
+export default function ArticlesList() {
     const jsonAPI = useFetch("jsonapi/");
     
     useEffect(() => {
@@ -20,5 +20,6 @@ export default function Articles() {
         <p>Etiam suscipit posuere tristique. Curabitur diam lorem, malesuada sit amet mauris sed, vestibulum condimentum est. Praesent tincidunt mauris eget feugiat sagittis. Duis metus nulla, eleifend eu sem sagittis, convallis mattis mauris. Integer ac faucibus orci, ut ullamcorper lectus. Sed nec blandit dui. Suspendisse commodo lacus quis tellus venenatis, ut fermentum elit eleifend. Morbi suscipit elit ac felis volutpat, a malesuada odio gravida.</p>
 
         <p>Maecenas vitae tristique quam, vitae dictum est. Cras at nisl id mi imperdiet fringilla et vel arcu. Maecenas et lorem at quam pellentesque consectetur sit amet a ligula. Donec a nunc fringilla, mollis neque et, mattis lacus. Proin in scelerisque nulla, blandit euismod ligula. Suspendisse blandit neque ac orci imperdiet ornare. Mauris luctus mi vitae nunc consectetur cursus. Suspendisse ullamcorper magna ut urna pretium pellentesque. Nunc feugiat, sem eu iaculis efficitur, tellus sem bibendum nisl, et consectetur odio nunc vitae neque. Aliquam ut nisi augue. Sed blandit, neque eu vehicula posuere, velit nunc rutrum ipsum, id cursus justo velit a eros.</p>
+
     </>);
 }
