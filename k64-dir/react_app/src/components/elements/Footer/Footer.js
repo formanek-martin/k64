@@ -1,6 +1,12 @@
 
 export default function Footer() {
-    return (<>      
-        <p>footer... Lorem ipsum dolor sit amet.</p>
-    </>);
+    return (
+        <footer>
+            <div className="k-grid">
+                <div className="k-grid--center">  
+                    <p>footer... Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </footer>
+    );
 }

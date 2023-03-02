@@ -35,8 +35,12 @@ export default function Article() {
 
     }, []);
     
-    return (<>      
-        <h1>{articleData.title}</h1>
-        <div className="article-content" dangerouslySetInnerHTML={{__html: articleData.content}} />        
-    </>);
+    return (
+        <div className="article k-grid">
+            <div className="k-grid--center">
+                <h1>{articleData.title}</h1>
+                <div className="article-content" dangerouslySetInnerHTML={{__html: articleData.content}} />
+            </div>
+        </div>
+    );
 }

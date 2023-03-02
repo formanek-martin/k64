@@ -1,5 +1,5 @@
 import {Routes, Route, Link, useLocation, Form} from "react-router-dom";
-import TopMenu from "./elements/TopMenu/TopMenu.js";
+import Header from "./elements/Header/Header.js";
 import Homepage from "./pages/Homepage.js";
 import ArticlesList from "./pages/Articles/ArticlesList.js";
 import Article from "./pages/Articles/Article.js";
@@ -9,7 +9,7 @@ import './Layout.css';
 
 export default function Layout() {
     return (<>
-        <TopMenu />
+        <Header />
         <main>
             <Routes>
                 <Route path="/" element={<Homepage />}>
@@ -18,7 +18,7 @@ export default function Layout() {
                 </Route>
                 <Route path="/clanky/:nid" element={<Article />}>
                 </Route>
-                <Route path="/kalendar" element={<div>tady bude kalendar</div>}>
+                <Route path="/kalendar" element={<div className="k-grid"><div className="k-grid--center">tady bude kalendar</div></div>}>
                 </Route>
             </Routes>
         </main>

@@ -1,6 +1,14 @@
-.temp-layout {
-    height: 100vh;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
+.k-grid {
+    display: grid; 
+    grid-template-columns: 1fr minmax(auto, 1100px) 1fr;
+    column-gap: 20px;
+}
+.k-grid--center {
+    grid-column-start: 2;
+}
+
+@media screen and (max-width: 640px) {
+    .k-grid {
+        column-gap: 10px;
+    }
 }

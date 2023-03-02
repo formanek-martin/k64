@@ -7,7 +7,8 @@
 }
 .word_cloud--item {
     cursor: pointer;
-    color: rgb(147, 160, 146);
+    color: #000;
     font-size: 2rem;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 4px rgb(255 255 255 / 80%)
+
 }
