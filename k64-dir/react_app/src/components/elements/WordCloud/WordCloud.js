@@ -17,7 +17,7 @@ export default function WordCloud(props) {
                 "Žalý",
                 "Sudý pátek",
                 "Čepelkiáda",
-                "Pešiny",
+                "Pěšiny",
                 "Pan Klimeš",
                 "Pusík"
             ]}
