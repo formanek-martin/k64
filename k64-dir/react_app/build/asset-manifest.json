@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.e2b15693.css",
-    "main.js": "/static/js/main.07afa3e4.js",
+    "main.css": "/static/css/main.8c237649.css",
+    "main.js": "/static/js/main.347dcbf0.js",
     "static/media/chess-bg-01.jpg": "/static/media/chess-bg-01.06109c8ee5f56e653a73.jpg",
     "index.html": "/index.html",
-    "main.e2b15693.css.map": "/static/css/main.e2b15693.css.map",
-    "main.07afa3e4.js.map": "/static/js/main.07afa3e4.js.map"
+    "main.8c237649.css.map": "/static/css/main.8c237649.css.map",
+    "main.347dcbf0.js.map": "/static/js/main.347dcbf0.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2b15693.css",
-    "static/js/main.07afa3e4.js"
+    "static/css/main.8c237649.css",
+    "static/js/main.347dcbf0.js"
   ]
 }
