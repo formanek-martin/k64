@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.3",
+        "drupal/calendar_view": "^2.0",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
@@ -24,7 +25,8 @@
         "drupal/decoupled_router": "^2.0",
         "drupal/pathauto": "^1.11",
         "drupal/restrict_node_view_page": "^1.1",
-        "drupal/restui": "^1.21"
+        "drupal/restui": "^1.21",
+        "drupal/smart_date": "^3.7"
     },
     "conflict": {
         "drupal/drupal": "*"

@@ -57,6 +57,10 @@ class ComposerStaticInitf42f4c7cdaae8fb05af5534cc6236776
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
         ),
+        'R' => 
+        array (
+            'Recurr\\' => 7,
+        ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
@@ -86,7 +90,9 @@ class ComposerStaticInitf42f4c7cdaae8fb05af5534cc6236776
             'Drupal\\Composer\\Plugin\\Scaffold\\' => 32,
             'Drupal\\Composer\\Plugin\\ProjectMessage\\' => 38,
             'Drupal\\Component\\' => 17,
+            'Doctrine\\Deprecations\\' => 22,
             'Doctrine\\Common\\Lexer\\' => 22,
+            'Doctrine\\Common\\Collections\\' => 28,
             'Doctrine\\Common\\Annotations\\' => 28,
         ),
         'C' => 
@@ -209,6 +215,10 @@ class ComposerStaticInitf42f4c7cdaae8fb05af5534cc6236776
         array (
             0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
         ),
+        'Recurr\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/simshaun/recurr/src/Recurr',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
@@ -270,9 +280,17 @@ class ComposerStaticInitf42f4c7cdaae8fb05af5534cc6236776
         array (
             0 => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component',
         ),
+        'Doctrine\\Deprecations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations',
+        ),
         'Doctrine\\Common\\Lexer\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
+        ),
+        'Doctrine\\Common\\Collections\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/collections/lib/Doctrine/Common/Collections',
         ),
         'Doctrine\\Common\\Annotations\\' => 
         array (
