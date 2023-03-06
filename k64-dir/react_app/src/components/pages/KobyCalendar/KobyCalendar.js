@@ -1,11 +1,15 @@
 import moment from 'moment';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
+import { Helmet } from 'react-helmet';
 
 export default function KobyCalendar() {
     const localizer = momentLocalizer(moment);
     return (
         <div className="k-grid">
+            <Helmet>
+                <title>Šachy Kobylisy | Kalendář</title>
+            </Helmet>
             <div className="k-grid--center">
                 <Calendar
                     localizer={localizer}
