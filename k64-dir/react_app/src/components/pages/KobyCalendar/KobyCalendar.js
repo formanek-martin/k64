@@ -1,5 +1,5 @@
 import {Calendar, dayjsLocalizer} from 'react-big-calendar';
-import {useState, useEffect} from "react";
+import {useState, useEffect, useCallback} from "react";
 import {Helmet} from 'react-helmet';
 import dayjs from 'dayjs';
 import useFetch from "../../../helpers/useFetch.js";
@@ -19,21 +19,32 @@ export default function KobyCalendar() {
         setIsLoading(true);
         get("")
         .then(data => {
+            // console.log(data);
             const tempList = [];
             data.forEach(event => {
+                console.log("event");
+                console.log(event);
                 event.field_cas_udalosti.forEach(eventDate => {
                     tempList.push({
                         title: event.title,
                         start: new Date(eventDate * 1000),
-                        end: new Date((eventDate  * 1000) + (2*60*60*1000)) //TODO: replace with real value from JSON or leave with default +2h
+                        end: new Date((eventDate  * 1000) + (2*60*60*1000)), //TODO: replace with real value from JSON or leave with default +2h
+                        resource: "test test test",
+                        something: "fdsafsafdasfd"
                     });
                 });
             });
+            console.log(tempList);
+            
             setEventsList(tempList);
         })
         .finally(() => {
             setIsLoading(false);
         });
+    }, []);
+
+    const onSelectEvent = useCallback((calEvent) => {
+        console.log(calEvent);
     }, []);
 
     return (
@@ -47,7 +58,8 @@ export default function KobyCalendar() {
                         events={eventsList}
                         startAccessor="start"
                         endAccessor="end"
-                        style={{ height: 500 }}
+                        onSelectEvent={onSelectEvent}
+                        style={{ minHeight: 500 }}
                     />
                 }
             </div>

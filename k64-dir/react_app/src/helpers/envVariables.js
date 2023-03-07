@@ -1,5 +1,5 @@
 export default function envVariables() {
-    const env = window.location.host;
+    const env = window.location.host.indexOf('www.') && window.location.host || window.location.host.replace('www.', '');
 
     const path_DEV = `http://localhost/k64/k64-dir/web/`;
     const path_LIVE = `https://admin.${env}/`;
