@@ -19,7 +19,7 @@ jobs:
         username: multi_532773
         password: ${{ secrets.FTP_PWD_2 }}
         local-dir: ./k64-dir/react_app/
-        server-dir: ./marfo.cz/react_app/
+        server-dir: ./sachkobylisy.cz/react_app/
         exclude: |
           **/.git*
           **/.git*/**
