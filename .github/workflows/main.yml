@@ -19,7 +19,7 @@ jobs:
         username: multi_532773
         password: ${{ secrets.FTP_PWD_2 }}
         local-dir: ./k64-dir/
-        server-dir: ./marfo.cz/_sub/admin/
+        server-dir: ./sachkobylisy.cz/_sub/admin/
         exclude: |
           **/.git*
           **/.git*/**
