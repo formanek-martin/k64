@@ -12,3 +12,9 @@
         column-gap: 10px;
     }
 }
+
+@media screen and (min-width: 641px) {
+    main {
+        min-height: calc(100vh - 200px);
+    }
+}
