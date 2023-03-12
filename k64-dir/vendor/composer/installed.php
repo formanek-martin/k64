@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '7947c702e37707090303dae0768caec2986bc453',
+        'reference' => 'ae1be16b0abe556bd10de6a677efc86e300e02a2',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -289,6 +289,15 @@
             'reference' => '2.0.4',
             'dev_requirement' => false,
         ),
+        'drupal/inline_entity_form' => array(
+            'pretty_version' => '1.0.0-rc15',
+            'version' => '1.0.0.0-RC15',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/inline_entity_form',
+            'aliases' => array(),
+            'reference' => '8.x-1.0-rc15',
+            'dev_requirement' => false,
+        ),
         'drupal/pathauto' => array(
             'pretty_version' => '1.11.0',
             'version' => '1.11.0.0',
@@ -304,7 +313,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '7947c702e37707090303dae0768caec2986bc453',
+            'reference' => 'ae1be16b0abe556bd10de6a677efc86e300e02a2',
             'dev_requirement' => false,
         ),
         'drupal/restrict_node_view_page' => array(
