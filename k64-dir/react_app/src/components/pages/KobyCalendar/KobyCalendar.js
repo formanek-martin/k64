@@ -26,11 +26,12 @@ export default function KobyCalendar() {
                 console.log(event);
                 event.field_cas_udalosti.forEach(eventDate => {
                     tempList.push({
-                        title: event.title,
+                        title: event.field_udalost_title,
                         start: new Date(eventDate * 1000),
-                        end: new Date((eventDate  * 1000) + (2*60*60*1000)), //TODO: replace with real value from JSON or leave with default +2h
-                        resource: "test test test",
-                        something: "fdsafsafdasfd"
+                        end: new Date((eventDate  * 1000) + (event.field_cas_udalosti_duration * 60 * 1000)),
+                        udalost_id: event.nid,
+                        turnaj_id: event.nid_1,
+                        kategory_id: event.field_ref_kategorie
                     });
                 });
             });
@@ -44,7 +45,7 @@ export default function KobyCalendar() {
     }, []);
 
     const onSelectEvent = useCallback((calEvent) => {
-        console.log(calEvent);
+        alert(JSON. stringify(calEvent));
     }, []);
 
     return (
