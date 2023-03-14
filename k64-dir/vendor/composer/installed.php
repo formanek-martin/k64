@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'ae1be16b0abe556bd10de6a677efc86e300e02a2',
+        'reference' => 'a230ba223dd0a506743bb17437de5f9b1bcf6448',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -89,6 +89,15 @@
             'install_path' => __DIR__ . '/../../web/modules/contrib/calendar_view',
             'aliases' => array(),
             'reference' => '2.0.5',
+            'dev_requirement' => false,
+        ),
+        'drupal/color_field' => array(
+            'pretty_version' => '3.0.0',
+            'version' => '3.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/color_field',
+            'aliases' => array(),
+            'reference' => '3.0.0',
             'dev_requirement' => false,
         ),
         'drupal/core' => array(
@@ -313,7 +322,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'ae1be16b0abe556bd10de6a677efc86e300e02a2',
+            'reference' => 'a230ba223dd0a506743bb17437de5f9b1bcf6448',
             'dev_requirement' => false,
         ),
         'drupal/restrict_node_view_page' => array(
