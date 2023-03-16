@@ -1,6 +1,6 @@
 import {Calendar, dayjsLocalizer} from 'react-big-calendar';
 import {useState, useEffect, useCallback} from "react";
-import {Helmet} from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import dayjs from 'dayjs';
 import useFetch from "../../../helpers/useFetch.js";
 import Loader from "../../elements/Loader/Loader.js";
@@ -26,10 +26,12 @@ export default function KobyCalendar() {
                 console.log("event");
                 console.log(event);
                 event.field_cas_udalosti.forEach(eventDate => {
+                    const duration = event.field_cas_udalosti_duration;
                     tempList.push({
                         title: event.field_udalost_title,
                         start: new Date(eventDate * 1000),
-                        end: new Date((eventDate  * 1000) + (event.field_cas_udalosti_duration * 60 * 1000)),
+                        end: new Date((eventDate  * 1000) + (duration * 60 * 1000)),
+                        allDay: duration >= 1439 ? true : false,
                         udalost_id: event.nid,
                         turnaj_id: event.nid_1,
                         kategory_color: event.field_barva_kategorie || event.field_barva_kategorie_1

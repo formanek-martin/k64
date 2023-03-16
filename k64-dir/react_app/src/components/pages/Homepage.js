@@ -1,5 +1,5 @@
 import WordCloud from "../elements/WordCloud/WordCloud.js";
-import {Helmet} from "react-helmet";
+import { Helmet } from 'react-helmet-async';
 import bg_image from "../../assets/images/chess-bg-01.jpg"; 
 import './Homepage.css';
 
