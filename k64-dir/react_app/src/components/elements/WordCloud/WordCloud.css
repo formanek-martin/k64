@@ -1,14 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-
+.word_cloud-wrapper {
+    overflow: hidden;
+}
 .word_cloud {
     font-family: Rubik Mono One, sans-serif;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .word_cloud--item {
     cursor: pointer;
     color: #000;
-    font-size: 2rem;
+    
     text-shadow: 0 0 4px rgb(255 255 255 / 80%)
+}
+.word_cloud-desc {
+    box-sizing: border-box;
+}
+.word_cloud-desc-inner {
+    text-align: left;
+}
+.word_cloud-desc-inner * {
+    color: #ebebeb;
+}
+.word_cloud-desc-inner *:first-child {
+    margin-top: 0;
+}
+.word_cloud-desc-inner *:last-child {
+    margin-bottom: 0;
+}
 
+@media screen and (max-width: 640px) {
+    .word_cloud-wrapper {
+        background: none !important;
+    }
+    .word_cloud {
+        padding: 20px 20px 80px;
+        background-size: cover;
+        background-position: center;
+    }
+    .word_cloud--item {
+        font-size: 24px;
+    }
+    .word_cloud-desc {
+        width: calc(100% - 40px);
+        margin: -60px auto 0;
+    }
+    .word_cloud-desc-inner {
+        padding: 30px;
+        background: rgba(0,0,0, 0.75);
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .word_cloud-wrapper {
+        background-size: cover;
+        background-position: center;
+        height: calc(100vh - (var(--header-min_height)));
+        min-height: 700px;
+        display: flex;
+    }
+    .word_cloud {
+        width: 50%;
+        background: none !important;
+    }
+    .word_cloud--item {
+        font-size: 2rem;
+    }
+    .word_cloud-desc {
+        width: 50%;
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .word_cloud-desc-inner {
+        padding: 30px;
+        background: rgba(0,0,0, 0.4);
+    }
 }

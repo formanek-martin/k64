@@ -1,4 +1,6 @@
 :root {
+    --header-min_height: 100px;
+    --footer-min_height: 100px;
     --bg-green: rgb(19, 83, 75);
 }
 body {

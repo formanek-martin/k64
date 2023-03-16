@@ -1,5 +1,5 @@
-import {Calendar, dayjsLocalizer} from 'react-big-calendar';
-import {useState, useEffect, useCallback} from "react";
+import { Calendar, dayjsLocalizer } from 'react-big-calendar';
+import { useState, useEffect, useCallback } from "react";
 import { Helmet } from 'react-helmet-async';
 import dayjs from 'dayjs';
 import useFetch from "../../../helpers/useFetch.js";
