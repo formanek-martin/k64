@@ -12,13 +12,15 @@ dayjs.locale('cs');
 const localizer = dayjsLocalizer(dayjs);
 
 export default function KobyCalendar() {
-    const {get} = useFetch("view-udalosti");
+    const {get: view_get} = useFetch("view-udalosti");
+    const {get: node_get} = useFetch("jsonapi/node/");
     const [isLoading, setIsLoading] = useState(false);
     const [eventsList, setEventsList] = useState([]);
+    const [eventDetail, setEventDetail] = useState("");
 
     useEffect(() => {
         setIsLoading(true);
-        get("")
+        view_get("")
         .then(data => {
             // console.log(data);
             const tempList = [];
@@ -34,6 +36,8 @@ export default function KobyCalendar() {
                         allDay: duration >= 1439 ? true : false,
                         udalost_id: event.nid,
                         turnaj_id: event.nid_1,
+                        udalost_uuid: event.uuid,
+                        turnaj_uuid: event.uuid_1,
                         kategory_color: event.field_barva_kategorie || event.field_barva_kategorie_1
                     });
                 });
@@ -47,7 +51,19 @@ export default function KobyCalendar() {
     }, []);
 
     const onSelectEvent = useCallback((calEvent) => {
-        alert(JSON. stringify(calEvent));
+        // alert(JSON. stringify(calEvent));
+        console.log(calEvent);
+        const endpoint = calEvent.turnaj_uuid ? `turnaj/${calEvent.turnaj_uuid}` : `udalost/${calEvent.udalost_uuid}`;
+
+        node_get(endpoint)
+        .then(data => {
+            const fields = data.data.attributes;
+            console.log(fields);
+            setEventDetail({
+                title: calEvent.title,
+                content: fields.body.value
+            });
+        });
     }, []);
 
     const eventPropGetter = useCallback((event) => ({
@@ -78,6 +94,10 @@ export default function KobyCalendar() {
                         />
                     }
                 </div>
+                {eventDetail && <div className="k64cal-detail">
+                    <h2>{eventDetail.title}</h2> 
+                    <div className="k64cal-detail-content" dangerouslySetInnerHTML={{__html: eventDetail.content}} />
+                </div>}
             </div>
         </div>
     )

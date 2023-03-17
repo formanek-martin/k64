@@ -1,6 +1,9 @@
 .k64cal-wrapper {
     padding: 20px 0;
 }
+.k64cal-detail {
+    margin-bottom: 30px;
+}
 .k64cal .rbc-row-segment .rbc-event-content {
     font-size: 12px;
 }

@@ -1,6 +1,18 @@
 footer {
     background-color: var(--bg-green);
 }
+.footer-content {
+    padding: 20px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-content *:first-child {
+    margin-top: 0;
+}
+.footer-content *:last-child {
+    margin-bottom: 0;
+}
 @media screen and (min-width: 641px) {
     footer {
         min-height: var(--footer-min_height);
