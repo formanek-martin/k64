@@ -1,9 +1,9 @@
 import { useState } from "react";
-import envVariables from "./envVariables.js";
+import { path_CMS } from "./envVariables.js";
 
 export default function useFetch(subUrl) {
   const [loading, setLoading] = useState(true);
-  const baseUrl = envVariables() + subUrl;
+  const baseUrl = path_CMS + subUrl;
 
   function get(url) {
     return new Promise((resolve, reject) => {

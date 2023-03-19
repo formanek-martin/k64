@@ -1,6 +1,7 @@
-import {useState, useEffect} from "react";
-import {useLocation} from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import useFetch from "../../../helpers/useFetch.js";
+import { updateWysiwygField } from "../../../helpers/helpers";
 import Loader from "../../elements/Loader/Loader.js";
 
 export default function Article() {
@@ -30,7 +31,7 @@ export default function Article() {
                 const fields = data.data.attributes;
                 setArticleData({
                     title: fields.title,
-                    content: fields.body.value
+                    content: updateWysiwygField(fields.body.value)
                 });
             })
             .finally(() => {
