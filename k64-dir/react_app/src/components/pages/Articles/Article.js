@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import useFetch from "../../../helpers/useFetch.js";
-import { updateWysiwygField } from "../../../helpers/helpers";
 import Loader from "../../elements/Loader/Loader.js";
+import WysiwygField from "../../elements/WysiwygField/WysiwygField.js";
 
 export default function Article() {
     const location = useLocation();
@@ -31,7 +31,7 @@ export default function Article() {
                 const fields = data.data.attributes;
                 setArticleData({
                     title: fields.title,
-                    content: updateWysiwygField(fields.body.value)
+                    content: fields.body.value
                 });
             })
             .finally(() => {
@@ -44,9 +44,14 @@ export default function Article() {
     return (
         <div className="article k-grid">
             <div className="k-grid--center">
+                <div className="chess-test">
+                    
+                </div>
                 {loading && <Loader />}
                 <h1>{articleData.title}</h1>
-                <div className="article-content" dangerouslySetInnerHTML={{__html: articleData.content}} />
+                <div className="article-content">
+                    <WysiwygField>{articleData.content}</WysiwygField>
+                </div>
             </div>
         </div>
     );
