@@ -10,23 +10,55 @@ header {
     max-width: 160px;
     align-self: center;
 }
-.top-menu {
+
+.menu-wrapper {
+    flex-grow: 1;
     display: flex;
-    align-self: end;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.top-menu ul {
+.main-menu {
+    width: 100%;
+    display: flex;
+}
+
+.main-menu ul {
     flex-grow: 1;
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: flex-end;
 }
 
-.top-menu ul li a {
+.main-menu ul li a {
     display: block;
     padding: 10px;
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+}
+
+.teams-menu {
+    width: 100%;
+    display: flex;
+    align-self: end;
+}
+
+.teams-menu ul {
+    flex-grow: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.teams-menu ul li a {
+    display: block;
+    padding: 5px 10px;
+    color: #dadada;
+    text-decoration: none;
+    font-size: 16px;
 }
