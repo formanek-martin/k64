@@ -3,4 +3,5 @@ const env = window.location.host.indexOf('www.') && window.location.host || wind
 export const path_DEV = `/k64/k64-dir/web/`;
 export const path_LOCAL = `http://localhost${path_DEV}`;
 export const path_LIVE = `https://admin.${env}/`;
-export const path_CMS = env === "localhost:3000" ? path_LOCAL : path_LIVE;
+export const is_LIVE = env === "localhost:3000" ? false : true;
+export const path_CMS = !is_LIVE ? path_LOCAL : path_LIVE;
