@@ -1,46 +1,8 @@
-/* @license
-             * Copyright (c) 2018, Jeff Hlywa (jhlywa@gmail.com)
-             * Released under the BSD license
-             * https://github.com/jhlywa/chess.js/blob/master/LICENSE
-             */
-
 /*!
  * TagCloud.js v2.3.0
  * Copyright (c) 2016-2022 @ Cong Min
  * MIT License - https://github.com/mcc108/TagCloud
  */
-
-/*! ./_pgn-parser.js */
-
-/*! ./src/pgn.js */
-
-/*! @mliebelt/pgn-parser */
-
-/*! chess.js */
-
-/*! exports provided: StringBuilder, Utils, pgnReader */
-
-/*! no static exports found */
-
-/*!********************!*\
-            !*** ./src/pgn.js ***!
-            \********************/
-
-/*!**************************!*\
-            !*** multi ./src/pgn.js ***!
-            \**************************/
-
-/*!****************************************!*\
-            !*** ./node_modules/chess.js/chess.js ***!
-            \****************************************/
-
-/*!*********************************************************!*\
-            !*** ./node_modules/@mliebelt/pgn-parser/pgn-parser.js ***!
-            \*********************************************************/
-
-/*!**********************************************************!*\
-            !*** ./node_modules/@mliebelt/pgn-parser/_pgn-parser.js ***!
-            \**********************************************************/
 
 /**
  * @license React
