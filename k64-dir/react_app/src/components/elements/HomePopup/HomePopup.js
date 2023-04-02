@@ -9,16 +9,15 @@ export default function HomePopup() {
             if (localStorage.getItem("k64-showpopup") === "false") {
                 setshowPopup(false);
             } else {
-                // localStorage.setItem("k64-showpopup", "true");
+                localStorage.setItem("k64-showpopup", "true");
                 setshowPopup(true);
             }
         }, 1000);
     }, []);
 
     function handlePopupClick(event) {
-        console.log("clicked");
         setshowPopup(false);
-        // localStorage.setItem("k64-showpopup", "false");
+        localStorage.setItem("k64-showpopup", "false");
     }
     
     if (!showPopup) {
