@@ -1,0 +1,94 @@
+.k64_popup-outer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    backdrop-filter: blur(2px);
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.k64_popup {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    background: rgb(211, 211, 211);
+    box-sizing: border-box;
+    padding: 50px;
+}
+.k64_popup-close_btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color:rgb(160, 160, 160);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.k64_popup-text {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.k64_popup-gears {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.machine {
+    width: 40%;
+    fill: var(--bg-green);
+}
+.small-shadow,
+.medium-shadow,
+.large-shadow {
+    fill: rgba(0, 0, 0, 0.05);
+}
+.small {
+    animation: counter-rotation 2.5s infinite linear;
+    transform-origin: 100.136px 225.345px;
+}
+.small-shadow {
+    animation: counter-rotation 2.5s infinite linear;
+    transform-origin: 110.136px 235.345px;
+}
+.medium {
+    animation: rotation 3.75s infinite linear;
+    transform-origin: 254.675px 379.447px;
+}
+.medium-shadow {
+    animation: rotation 3.75s infinite linear;
+    transform-origin: 264.675px 389.447px;
+}
+.large {
+    animation: counter-rotation 5s infinite linear;
+    transform-origin: 461.37px 173.694px;
+}
+.large-shadow {  
+    animation: counter-rotation 5s infinite linear;
+    transform-origin: 471.37px 183.694px;
+}
+
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to   {transform: rotate(359deg);}
+}
+@keyframes counter-rotation {
+    from {transform: rotate(359deg);}
+    to   {transform: rotate(0deg);}
+}
+
+@media screen and (max-width: 640px) {
+    .k64_popup {
+        width: calc(100vw - 60px);
+        height: calc(100vh - 60px);
+        padding: 20px;
+    }
+    .machine {
+        width: 100%;
+    }
+}
