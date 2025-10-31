@@ -28,7 +28,8 @@
         "drupal/pathauto": "^1.11",
         "drupal/restrict_node_view_page": "^1.1",
         "drupal/restui": "^1.21",
-        "drupal/smart_date": "^3.7"
+        "drupal/smart_date": "^3.7",
+        "drush/drush": "^12.5"
     },
     "conflict": {
         "drupal/drupal": "*"
